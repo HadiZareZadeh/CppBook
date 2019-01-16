@@ -1,0 +1,147 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.att.cppbook.book_content"
+    android:background="@drawable/background"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout3">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:text="@string/btn_back"
+            android:id="@+id/btnBack"
+            android:layout_gravity="center_vertical"
+            android:onClick="onBtnBackClick"
+            android:textSize="24sp"
+            android:layout_width="120dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="normal|bold" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/ShareText"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/share"
+            android:padding="10dp"
+            android:onClick="onShareTextClick"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgFavorite"
+            android:layout_gravity="center_vertical"
+            android:onClick="onImgFavoriteClick"
+            android:padding="10dp"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgSee"
+            android:layout_gravity="center_vertical"
+            android:onClick="onImgSeeClick"
+            android:padding="10dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout3">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="title"
+                android:id="@+id/txtBookTitle"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:layout_marginLeft="0dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/PlayingState"
+                android:padding="0dp"
+                android:src="@drawable/pause"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="onPlayingStateClick"
+                android:layout_height="50dp"
+                android:layout_width="50dp" />
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/scrollView"
+            android:contextClickable="true"
+            android:layout_weight="1"
+            android:layout_height="350dp">
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:id="@+id/WebViewBookContent"
+                android:layout_gravity="center_horizontal"
+                android:textSize="14sp" />
+        </ScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:id="@+id/txtBookDate"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="author"
+                android:id="@+id/txtBookAuthor"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

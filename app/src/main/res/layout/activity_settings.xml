@@ -1,0 +1,164 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.att.cppbook.settings"
+    android:background="@drawable/background"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_above="@+id/btnBack">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sound_settings"
+                android:id="@+id/textView2"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/holo_green_light" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="25dp"
+                android:onClick="onImgSoundStateClick"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/imgSoundState"
+                    android:padding="10dp"
+                    android:onClick="onImgSoundStateClick"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:text="@string/txt_sound_state"
+                    android:id="@+id/txtSoundState"
+                    android:textSize="24sp"
+                    android:padding="10dp"
+                    android:onClick="onImgSoundStateClick"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_light_settings"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/holo_green_light" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="25dp"
+                android:onClick="onImgScreenStateClick"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/imgScreenState"
+                    android:padding="10dp"
+                    android:onClick="onImgScreenStateClick"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:text="@string/txt_light_state"
+                    android:id="@+id/txtScreenState"
+                    android:textSize="24sp"
+                    android:padding="10dp"
+                    android:onClick="onImgScreenStateClick"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/font_size_settings"
+                android:id="@+id/textView5"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/holo_green_light" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="25dp" >
+
+                <ImageView
+                    android:id="@+id/imgFontSizeUp"
+                    android:padding="10dp"
+                    android:onClick="onImgFontSizeUpClick"
+                    android:src="@drawable/zoom_in"
+                    android:layout_height="70dp"
+                    android:layout_width="70dp"
+                    android:contentDescription=""
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/imgFontSizeDown"
+                    android:onClick="onImgFontSizeDownClick"
+                    android:padding="10dp"
+                    android:src="@drawable/zoom_out"
+                    android:layout_height="70dp"
+                    android:layout_width="70dp"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:text="@string/txt_font_size"
+                    android:id="@+id/txtFontSize"
+                    android:textSize="24sp"
+                    android:padding="10dp"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_back"
+        android:id="@+id/btnBack"
+        android:onClick="onBtnBackClick"
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="normal|bold"
+        android:fontFamily="sans-serif-medium" />
+
+</RelativeLayout>

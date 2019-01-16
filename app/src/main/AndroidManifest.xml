@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.att.cppbook">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tblOfContent"
+            android:label="@string/title_activity_tbl_of_content" />
+        <activity
+            android:name=".book_content"
+            android:label="@string/title_activity_book_content" />
+        <activity
+            android:name=".tblOfFavoriteBooks"
+            android:label="@string/title_activity_tbl_of_favorite_books" />
+        <activity
+            android:name=".search"
+            android:label="@string/title_activity_search" />
+        <activity
+            android:name=".settings"
+            android:label="@string/title_activity_settings" />
+    </application>
+
+</manifest>

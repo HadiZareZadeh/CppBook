@@ -1,0 +1,123 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main"
+    android:background="@drawable/background"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:drawingCacheQuality="high"
+        tools:ignore="ContentDescription"
+        android:src="@drawable/buchseiten" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnTblContent"
+            android:src="@drawable/menu_tbl_content"
+            android:onClick="onBtnTblContentClick"
+            style="@style/Widget.AppCompat.ImageButton"
+            tools:ignore="ContentDescription"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnFavorite"
+            android:onClick="onBtnFavoriteClick"
+            android:src="@drawable/menu_favorite"
+            style="@style/Widget.AppCompat.ImageButton"
+            tools:ignore="ContentDescription"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnSearch"
+            android:src="@drawable/menu_search"
+            android:onClick="onBtnSearchClick"
+            style="@style/Widget.AppCompat.ImageButton"
+            tools:ignore="ContentDescription"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnQuestion"
+            android:onClick="onBtnQuestionClick"
+            android:src="@drawable/menu_website"
+            style="@style/Widget.AppCompat.ImageButton"
+            tools:ignore="ContentDescription"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2">
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnAboutMe"
+            android:src="@drawable/menu_about"
+            android:onClick="onBtnAboutMeClick"
+            style="@style/Widget.AppCompat.ImageButton"
+            tools:ignore="ContentDescription"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnContactMe"
+            android:src="@drawable/menu_contact"
+            android:onClick="onBtnContactMeClick"
+            style="@style/Widget.AppCompat.ImageButton"
+            tools:ignore="ContentDescription"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnSettings"
+            android:onClick="onBtnSettingsClick"
+            android:src="@drawable/menu_settings"
+            style="@style/Widget.AppCompat.ImageButton"
+            tools:ignore="ContentDescription"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnExit"
+            android:onClick="onBtnExitClick"
+            android:src="@drawable/menu_exit"
+            style="@style/Widget.AppCompat.ImageButton"
+            tools:ignore="ContentDescription"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

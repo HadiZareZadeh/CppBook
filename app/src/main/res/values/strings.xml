@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Amazing Stories</string>
+
+    <string name="my_nastaliq_font" translatable="false">nastaliq.ttf</string>
+    <string name="btn_back" style='font-size: 24px;'>Return</string>
+
+    <string name="register">OK</string>
+    <string name="try_again">Try Again!</string>
+
+    <string name="exit_title">Are you sure??</string>
+    <string name="exit_message">Come back tomorrow </string>
+
+    <string name="about_me_title">About us</string>
+    <string name="about_me_message" translatable="false">tl.me/attirant</string>
+
+    <string name="contact_me_title">Contact us</string>
+    <string name="contact_me_message" translatable="false">zarehadi2@gmail.com</string>
+
+    <string name="title_activity_tbl_of_content">Lessons list</string>
+
+    <string name="title_activity_book_content">Lesson title</string>
+
+    <string name="title_activity_tbl_of_favorite_books">Favorite lessons</string>
+
+    <string name="title_activity_search">Search</string>
+
+    <string name="search_question">Text</string>
+    <string name="search_by_title">By Title</string>
+    <string name="search_by_content">By Content</string>
+    <string name="search_by_author">By Author</string>
+
+    <string name="search_button_label">Search</string>
+    <string name="search_error_enter_text">Please Enter Some Text!</string>
+    <string name="search_error_not_found">Not Found</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="sound_settings">Sound State:</string>
+    <string name="sound_settings_on">Playing</string>
+    <string name="sound_settings_off">Stop</string>
+    <string name="txt_sound_state">sound state</string>
+
+    <string name="screen_light_settings">Brightness State:</string>
+    <string name="screen_light_settings_on">All Time On</string>
+    <string name="screen_light_settings_general">Device Settings</string>
+    <string name="txt_light_state">light state</string>
+
+    <string name="font_size_settings">Font Size:</string>
+    <string name="font_size_settings_sample"> sp</string>
+    <string name="txt_font_size">font size</string>
+
+</resources>

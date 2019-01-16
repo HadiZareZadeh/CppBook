@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/icon"
+        android:padding="10dp"
+        android:src="@drawable/launcher"
+        android:focusableInTouchMode="false" />
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:gravity="right|center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/setSee"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:id="@+id/setFav"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/setSee"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/setSee" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:gravity="left|center"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_toEndOf="@+id/icon">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:id="@+id/txtTitle"
+            android:textColor="@android:color/holo_green_light"
+            android:maxWidth="200dp"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="author"
+            android:id="@+id/txtAuthorContent"
+            android:textColor="@android:color/holo_blue_bright"
+            android:maxWidth="200dp"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</RelativeLayout>
